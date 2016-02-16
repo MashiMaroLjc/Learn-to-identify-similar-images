@@ -1,4 +1,3 @@
-[中文版](chinese.md)
 
 I learn how to identify similar images, I wrote some python scripts.
 
