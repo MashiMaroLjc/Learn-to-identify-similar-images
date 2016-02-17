@@ -6,7 +6,7 @@ from PIL import ImageOps
 #The Hash Method is too strict,so this moudel suitable for finding image by Thumbnail
 #
 #author MashiMaroLjc
-#version 2016-2-16
+#version 2016-2-17
 
 def getCode(img,size):
 
@@ -60,21 +60,3 @@ def classfiy_aHash(image1,image2,size=(8,8),exact=25):
 
 __all__=[classfiy_aHash]
 
-
-if __name__ == '__main__':
-	pre = 0
-	for num in range(1,10):
-		test = ['True','True','True','True','False','False','True','True','True']
-		path1 = "test\\TEST{}\\1.JPG".format(num)
-		path2 = "test\\TEST{}\\2.JPG".format(num)
-
-		image1 = Image.open(path1)
-		image2 = Image.open(path2)
-
-		result = classfiy_aHash(image1, image2)
-		
-		if str(result) == test[num-1]:
-			pre +=1
-		print(result,test[num-1])
-
-	print("rate: " , round(pre/len(test),2)*100,"%")
