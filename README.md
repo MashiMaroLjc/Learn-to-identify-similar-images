@@ -1,3 +1,4 @@
+[中文](Chinese.md)
 
 I learn how to identify similar images, I wrote some python scripts.
 
@@ -18,6 +19,9 @@ Of course,I will happy if you give me a star.
 
 + ```aHash.py```  &nbsp; This module can classify the image by Average Hash Method.
 + ```histogram.py``` &nbsp; This module can classify the image by Calculating the histogram.
++ ```histogram2.py```&nbsp; This module also can classify the image by Calculating the histogram.But it will split the image to 16 pices and Calculating its histogram.So,it is more accurate than ```historgram.py```
+
+
 
 
 ##My enviroment 
@@ -28,3 +32,4 @@ Of course,I will happy if you give me a star.
 <br>
 
 <b>To be continue......</b>
+
