@@ -20,7 +20,7 @@ Of course,I will happy if you give me a star.
 + ```aHash.py```  &nbsp; This module can classify the image by Average Hash Method.
 + ```histogram.py``` &nbsp; This module can classify the image by Calculating the histogram.
 + ```histogram2.py```&nbsp; This module also can classify the image by Calculating the histogram.But it will split the image to 16 pices and Calculating its histogram.So,it is more accurate than ```historgram.py```
-
++ ```pHash.py```&nbsp; This module classify the image by  Discrete Cosine Transform and the  accurate rate has a little improve.
 
 
 
