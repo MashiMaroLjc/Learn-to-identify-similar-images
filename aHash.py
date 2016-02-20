@@ -39,7 +39,7 @@ def compCode(code1,code2):
 def classfiy_aHash(image1,image2,size=(8,8),exact=25):
 	''' 'image1' and 'image2' is a Image Object.
 	You can build it by 'Image.open(path)'.
-	'Size' is parameter what the image will resize to it.
+	'Size' is parameter what the image will resize to it and then image will be compared by the algorithm.
 	It's 8 * 8 when it default.  
 	'exact' is parameter for limiting the Hamming code between 'image1' and 'image2',it's 25 when it default.
 	The result become strict when the exact become less. 
