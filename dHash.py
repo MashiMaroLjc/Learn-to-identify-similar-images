@@ -12,8 +12,8 @@ def getCode(img,size):
 	# print("x==",size[0])
 	# print("y==",size[1]-1)
 	
-	x_size = size[0]-1#weight
-	y_size = size[1] #height
+	x_size = size[0]-1#width
+	y_size = size[1] #high
 	for x in range(0,x_size):
 		for y in range(0,y_size):
 			now_value = img.getpixel((x,y))

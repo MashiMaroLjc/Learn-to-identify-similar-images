@@ -7,6 +7,12 @@ import math
 #author MashiMaroLjc
 #version 2016-2-20
 
+def show_code(code):
+	if len(code)<=16:
+		for c in code:
+			print(c,end="")
+	print()
+
 
 def get_code(List,middle):
 
@@ -16,6 +22,7 @@ def get_code(List,middle):
 			result.append("1")
 		else:
 			result.append("0")
+	# show_code(result)
 	return result
 
 
@@ -47,10 +54,10 @@ def get_matrix(image):
 
 	matrix = []
 	size = image.size
-	for x in range(0,size[0]):
+	for height in range(0,size[1]):
 		pixel = []
-		for y in range(0,size[1]):
-			pixel_value = image.getpixel((x,y))
+		for width in range(0,size[0]):
+			pixel_value = image.getpixel((width,height))
 			pixel.append(pixel_value)
 		matrix.append(pixel)	
 
@@ -131,7 +138,6 @@ def classify_DCT(image1,image2,size=(32,32),part_size=(8,8)):
 
 	The function will return the hamming code,less is correct. 
 	"""
-
 	assert size[0]==size[1],"size error"
 	assert part_size[0]==part_size[1],"part_size error"
 
