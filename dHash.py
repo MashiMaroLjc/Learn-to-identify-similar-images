@@ -9,10 +9,15 @@ from PIL import ImageOps
 def getCode(img,size):
 
 	result = []
-	for x in range(0,size[0]):
-		for y in range(0,size[1]-1):
+	# print("x==",size[0])
+	# print("y==",size[1]-1)
+	
+	x_size = size[0]-1#weight
+	y_size = size[1] #height
+	for x in range(0,x_size):
+		for y in range(0,y_size):
 			now_value = img.getpixel((x,y))
-			next_value = img.getpixel((x,y+1))
+			next_value = img.getpixel((x+1,y))
 
 			if next_value < now_value:
 				result.append(1)
@@ -42,6 +47,7 @@ def classfiy_dHash(image1,image2,size=(9,8)):
 	image1 = image1.resize(size).convert('L')
 	code1 = getCode(image1, size)
 
+
 	image2 = image2.resize(size).convert('L')
 	code2 = getCode(image2, size)
 
@@ -52,5 +58,4 @@ def classfiy_dHash(image1,image2,size=(9,8)):
 
 
 __all__=[classfiy_dHash]
-
 
