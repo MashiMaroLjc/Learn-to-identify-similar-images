@@ -7,11 +7,6 @@ import math
 #author MashiMaroLjc
 #version 2016-2-20
 
-def show_code(code):
-	if len(code)<=16:
-		for c in code:
-			print(c,end="")
-	print()
 
 
 def get_code(List,middle):
@@ -22,7 +17,6 @@ def get_code(List,middle):
 			result.append("1")
 		else:
 			result.append("0")
-	# show_code(result)
 	return result
 
 
