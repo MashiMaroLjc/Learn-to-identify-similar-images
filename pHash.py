@@ -125,7 +125,7 @@ def sub_matrix_to_list(DCT_matrix,part_size):
 def classify_DCT(image1,image2,size=(32,32),part_size=(8,8)):
 	""" 'image1' and 'image2' is a Image Object.
 	You can build it by 'Image.open(path)'.
-	'Size' is parameter what the image will resize to it and then image will be compared by the algorithm.
+	'Size' is parameter what the image will resize to it and then image will be compared by the pHash.
 	It's 32 * 32 when it default. 
 	'part_size' is a size of a part of the matrix after Discrete Cosine Transform,which need to next steps.
 	It's 8 * 8 when it default. 
