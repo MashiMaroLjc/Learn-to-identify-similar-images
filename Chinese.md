@@ -19,11 +19,14 @@
 他会把图片分隔成16个小块，然后分别比较，最后综合比较结果，从而提高比较的准确率。
 + ```pHash.py``` &nbsp;通过对图片矩阵进行离散余弦变换来识别相似图片，效果有所提高。
 + ```dHash.py ```&nbsp;利用dHash算法进行识别，有人能告诉我dHash的全称叫神马吗？
++ ```face1.py``` &nbsp;基于openCV和Haar特征来识别出人脸的位置。
++ ```face2.py``` &nbsp;在```face1.py```的基础上，判断两张人脸是否相似。
 
 ##实验环境
 
 + [python3.4](https://www.python.org/)
 + [pillow](https://pypi.python.org/pypi/Pillow)
++ [openCV](http://opencv.org/)
 
 
 <br>
