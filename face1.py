@@ -49,6 +49,3 @@ def drawFaces(image_path,new_path):
 __all__ = [drawFaces]
 
 
-if __name__ == '__main__':
-    path = "00212599.jpg"
-    drawFaces(path,"1.jpg")
