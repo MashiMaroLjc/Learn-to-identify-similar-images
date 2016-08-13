@@ -25,6 +25,7 @@ Of course,I will happy if you give me a star.
 + ```dHash.py ```&nbsp; This module can classify the image by dHash.Someone is willing to tell me the name of the Dash in detail?
 + ```face1.py```&nbsp; Find the location of the face using opencv.
 + ```face2.py```&nbsp; On the base of ```face1.py``` to judge whether two face similar
++ ```imagecluster```&nbsp;Using Using image clustering to classify the image.
 
 ##My enviroment 
 
