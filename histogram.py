@@ -1,4 +1,5 @@
 from PIL import Image
+import sys
 
 #This module can classify the image by histogram.
 #This method is easy for someone who is a beginner in Image classification.
@@ -6,10 +7,10 @@ from PIL import Image
 #author MashiMaroLjc
 #version 2016-2-16
 
-def classfiy_histogram(image1,image2,size = (256,256)):
+def classify_histogram(image1,image2,size = (256,256)):
 	''' 'image1' and 'image2' is a Image Object.
 	You can build it by 'Image.open(path)'.
-	'Size' is parameter what the image will resize to it.It's 256 * 256 when it default.  
+	'Size' is parameter what the image will resize to it.It's 256 * 256 when it default.
 	This function return the similarity rate betweene 'image1' and 'image2'
 	'''
 	image1 = image1.resize(size).convert("RGB")
@@ -27,7 +28,7 @@ def classfiy_histogram(image1,image2,size = (256,256)):
 			data.append(1 - abs(g[index] - s[index])/max(g[index],s[index]) )
 		else:
 			data.append(1)
-	
+
 	return sum(data)/len(g)
 
-
+__all__=[classify_histogram]
