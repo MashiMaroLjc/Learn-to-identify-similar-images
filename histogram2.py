@@ -18,7 +18,7 @@ def calculate(image1,image2):
 			data.append(1 - abs(g[index] - s[index])/max(g[index],s[index]) )
 		else:
 			data.append(1)
-	
+
 	return sum(data)/len(g)
 
 
@@ -38,10 +38,10 @@ def split_imgae(image,part_size):
 
 	return sub_image_list
 
-def classfiy_histogram_with_split(image1,image2,size = (256,256),part_size=(64,64)):
+def classify_histogram_with_split(image1,image2,size = (256,256),part_size=(64,64)):
 	''' 'image1' and 'image2' is a Image Object.
 	You can build it by 'Image.open(path)'.
-	'Size' is parameter what the image will resize to it.It's 256 * 256 when it default.  
+	'Size' is parameter what the image will resize to it.It's 256 * 256 when it default.
 	'part_size' is size of piece what the image will be divided.It's 64*64 when it default.
 	This function return the similarity rate betweene 'image1' and 'image2'
 	'''
@@ -59,7 +59,7 @@ def classfiy_histogram_with_split(image1,image2,size = (256,256),part_size=(64,6
 	y = size[1]/part_size[1]
 
 	pre = round((sub_data/(x*y) ),3 )
-	return  pre	
+	return  pre
 
-__all__ = [classfiy_histogram_with_split]
+__all__ = [classify_histogram_with_split]
 
