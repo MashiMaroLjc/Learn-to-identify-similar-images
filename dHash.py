@@ -11,7 +11,7 @@ def getCode(img,size):
 	result = []
 	# print("x==",size[0])
 	# print("y==",size[1]-1)
-	
+
 	x_size = size[0]-1#width
 	y_size = size[1] #high
 	for x in range(0,x_size):
@@ -34,15 +34,15 @@ def compCode(code1,code2):
 	for index in range(0,len(code1)):
 		if code1[index] != code2[index]:
 			num+=1
-	return num 
+	return num
 
-def classfiy_dHash(image1,image2,size=(9,8)):
+def classify_dHash(image1,image2,size=(9,8)):
 	''' 'image1' and 'image2' is a Image Object.
 	You can build it by 'Image.open(path)'.
 	'Size' is parameter what the image will resize to it and then image will be compared to another image by the dHash.
-	It's 9 * 8 when it default.  
+	It's 9 * 8 when it default.
 
-	The function will return the hamming code,less is correct. 
+	The function will return the hamming code,less is correct.
 	'''
 	image1 = image1.resize(size).convert('L')
 	code1 = getCode(image1, size)
@@ -52,10 +52,10 @@ def classfiy_dHash(image1,image2,size=(9,8)):
 	code2 = getCode(image2, size)
 
 	assert len(code1) == len(code2),"error"
-	
+
 	return compCode(code1, code2)
 
 
 
-__all__=[classfiy_dHash]
+__all__=[classify_dHash]
 
