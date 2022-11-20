@@ -21,7 +21,6 @@
 + ```dHash.py ```&nbsp;利用dHash算法进行识别，有人能告诉我dHash的全称叫神马吗？
 + ```face1.py``` &nbsp;基于openCV和Haar特征来识别出人脸的位置。
 + ```face2.py``` &nbsp;在```face1.py```的基础上，判断两张人脸是否相似。
-+ ```face2.py``` &nbsp;在```face1.py```的基础上，判断两张人脸是否相似。
 + ```imagecluster```&nbsp;利用图片内物体聚类的方法判断图片的相似度
 
 ##实验环境
